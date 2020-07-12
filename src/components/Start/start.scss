@@ -1,0 +1,17 @@
+.Start{
+    margin: 0;
+    width: 100vw;
+    height: 100vh;
+    
+    background-image: url("../../assets/Karolina_Pawel_0774-pokaz.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    overflow: hidden;
+    background-position-y: 50%;
+    text-align: end;
+
+    .name{
+        margin-top: 10%;
+    }
+    
+}
