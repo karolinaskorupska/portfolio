@@ -18,6 +18,7 @@
             cursor: pointer;
             &:hover, &:focus {
               outline: none;
+            
             }
         
         .menu_item_meatballs{
@@ -36,6 +37,10 @@
         background: black;
         border-radius: 50%;
         display: block;
+
+        &:hover{
+            background-color: rgb(177, 177, 177)
+        }
       }
 
 }

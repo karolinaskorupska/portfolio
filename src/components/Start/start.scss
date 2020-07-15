@@ -1,8 +1,8 @@
 .Start{
-    margin: 0;
+    
     width: 100vw;
     height: 100vh;
-    
+    color: black;
     background-image: url("../../assets/Karolina_Pawel_0774-pokaz.jpg");
     background-repeat: no-repeat;
     background-size: cover;
@@ -12,6 +12,11 @@
 
     .name{
         margin-top: 10%;
+        &:hover{
+            color: rgb(177, 177, 177);
+            transform: scale(102%);
+            cursor:no-drop;
+        }
     }
     
 }

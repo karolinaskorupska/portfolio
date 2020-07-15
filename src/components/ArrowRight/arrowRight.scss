@@ -1,4 +1,5 @@
 .ArrowRight {
+    
     cursor: pointer;
     height: 120px;
     left: 50%;
@@ -6,12 +7,14 @@
     top: 50%;
     transform: translateX(-50%) translateY(-50%);
     transition: transform .1s;
-    width: 80px;
+    width: 30px;
     
-    
+    text-align: end;
+
     &_top,
     &_bottom {
       background-color: #666;
+      background-color: black;
       height: 4px;
       left: -5px;
       position: absolute;
@@ -19,7 +22,7 @@
       width: 100%;
       
       &:after {
-        background-color: #fff;
+        background-color: rgb(177, 177, 177);
         content: '';
         height: 100%;
         position: absolute;
