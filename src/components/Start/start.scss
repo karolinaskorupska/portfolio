@@ -12,10 +12,10 @@
 
     .name{
         margin-top: 10%;
-        &:hover{
-            color: rgb(177, 177, 177);
-            transform: scale(102%);
-            cursor:no-drop;
+        text-transform: uppercase;
+        h1{
+            font-weight: 100;
+            font-size: 3rem;
         }
     }
     

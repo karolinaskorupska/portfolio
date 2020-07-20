@@ -1,11 +1,12 @@
-import React from "react";
+import React, { Component } from "react";
 import { Container, Row, Col } from "react-grid-system";
 // import { Link } from "react-router-dom";
 import "../Start/start.scss";
 import Menu from "../Menu";
 
-import HamburgerMenu from "../HamburgerMenu";
 import ArrowRight from "../ArrowRight";
+
+
 
 const Start = () => (
   <div className="Start">
@@ -28,11 +29,10 @@ const Start = () => (
       <Col xl={11} lg={11} md={11} >
         <div className="menuAndHamburger">
           <Menu />
-          <HamburgerMenu />
         </div>
       </Col>
     </Row>
-    <Row justify="end" style={{ height: "70px" }}>
+{/*     <Row justify="end" style={{ height: "70px" }}>
       <Col
         xl={2.5}
         offset={{ xl: 8, lg: 8, md: 8, sm: 8, xs: 8 }}
@@ -43,7 +43,7 @@ const Start = () => (
       >
         <ArrowRight />
       </Col>
-    </Row>
+    </Row> */}
   </div>
 );
 

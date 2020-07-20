@@ -1,31 +1,40 @@
-import React from 'react';
+import React, { Component } from "react";
 
-import { Link } from 'react-scroll';
-import '../Menu/menu.scss';
+import Navigation from "../Navigation";
+import HamburgerMenu from "../HamburgerMenu";
 
-const Menu = () => {
-    return(
-        <nav className="menu hidden">
-            <ul>
-                <li>
-                    <a href= "/" title="home"
-                      smooth={"true"} offset={0} duration={500} >home</a>
-                </li>
-                <li>
-                    <Link to= "/" title="about-me"
-                    smooth={"true"} offset={0} duration={500} >about me</Link>
-                </li>
-                <li>
-                    <Link to= "/" title="my-works" 
-                    smooth={"true"} offset={0} duration={800}>my works</Link>
-                </li>
-                <li>
-                    <Link to= "/" title="contact" 
-                    smooth={"true"} offset={0} duration={1000}>contact</Link>
-                </li>
-            </ul>
-        </nav>
-    )
+class Menu extends Component {
+  state = {
+    hamburgerIsOpen: false
+  };
+
+  handleHamburgerMenu = () => {
+    this.setState({
+      hamburgerIsOpen: !this.state.hamburgerIsOpen,
+    });
+  };
+
+  handleHamburgerMenuClose = () => {
+    this.setState({
+      hamburgerIsOpen: false,
+    });
+    
+  };
+
+  render() {
+    return (
+      <>
+        <Navigation
+          hamburgerIsOpen={this.state.hamburgerIsOpen}
+          
+        />
+        <HamburgerMenu
+            hamburgerIsOpen={this.state.hamburgerIsOpen}
+            handleHamburgerMenu={this.handleHamburgerMenu}
+        />
+      </>
+    );
+  }
 }
 
 export default Menu;
