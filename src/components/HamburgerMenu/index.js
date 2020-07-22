@@ -16,9 +16,9 @@ const HamburgerMenu =({handleHamburgerMenu, hamburgerIsOpen }) => {
     <button onClick={handleHamburgerMenu} className="HamburgerMenu">
       <div className="menu_wrapper">
         <div className={classNameHamburgerMenu}>
-          <div className="circle"></div>
-          <div className="circle"></div>
-          <div className="circle"></div>
+          <div className="line"></div>
+          <div className="line"></div>
+          {/* <div className="circle"></div> */}
         </div>
       </div>
     </button>
